@@ -1,2 +1,12 @@
 linkedin.com
 reddit.com
+
+# Hosts that reject automated requests regardless of user agent.
+# These URLs resolve fine in a browser; the link checker gets 401/403.
+intmath.com
+stackoverflow.com
+unsplash.com
+
+# Responds in ~0.2s from an ordinary IP but times out from GitHub Actions
+# runners, so the checker reports it as dead on every run.
+lokeshdhakar.com
